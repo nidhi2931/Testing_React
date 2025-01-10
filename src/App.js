@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';  
 import FileUpload from './components/FileUpload/FileUpload';
 import InputForm from './components/test/InputForm';
+import Input from './components/test/Input';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<FileUpload/>} />
         <Route path='/input_field' element={<InputForm/>} />
+        <Route path='/input' element={<Input/>}/>
       </Routes>
 
     </div>
